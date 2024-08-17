@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>The Toilet Gallery</h1>
-
+    
     <div id="show_image_popup">
       <div class="close-btn-area">
         <button id="close-btn">X</button>
@@ -17,15 +17,36 @@
         <img id="large-image" src="" alt="" />
       </div>
       <div id="text-show-area">
-        <p>Text goes here</p>
+        <div id="text-box">
+        <p id="artist"></p>
+        <p id="title"></p>
+        <p id="medium"></p>
+        <p id="comment"></p>
+        <p id="extraLink"></p>
+        </div>
       </div>
     </div>
+
+    <div id="text-show-area">
+      <p id="artist"><em>firstName lastName</em> (yob - yod)</p>
+      <p id="title"><em>Title of Artwork</em></p>
+      <p id="medium">Medium of the artwork</p>
+      <p id="comment">Here is a rather long description of the work of art here we are talking about.</p>
+      <p id="extraLink"><a href="https://www.w3schools.com">https://www.w3schools.com</a>
+      </p>
+    </div>
+
+
+    <div class='audio-container'>
+      <audio src="bgm/vivaldis_four_seasons.mp3" controls autoplay></audio>
+    </audio>
+   </div>
 
     <div class="row">
       <div class="column">
         <img
           class="small-image"
-          src="images/individual_art/0101 Pity - William Blake.jpg"
+          src="images/individual_art/0101_Pity_WilliamBlake.jpg"
           alt=""
         />
       </div>
@@ -33,7 +54,7 @@
       <div class="column">
         <img
           class="small-image"
-          src="images/individual_art/0102 The Battle of San Romano - Paolo Uccello.jpg"
+          src="images/individual_art/0102_TheBattleOfSanRomano_PaoloUccello.jpg"
           alt=""
         />
       </div>
