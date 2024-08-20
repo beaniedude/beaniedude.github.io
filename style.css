@@ -13,41 +13,28 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-.row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding: 5px;
-  }
-
-  .column img{
-    object-fit:cover;
-    width: 100%;
-    transition: 0.3s;
-    cursor: pointer;
-    border: 1px solid black;
+  .small-image{
+    cursor:pointer;
   }
 
   #show_image_popup{
-    width: 90%;
+    width: 90vw;
     border: 1px solid #333;
     box-sizing: border-box;
     padding: 5px;
     text-align: center;
     z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
     background: #e5e5e5;
   /*    */
     display: none;
   }
-  #show_image_popup img{
-    max-width: 90%;
-    max-height: 50%;
+#show_image_popup img{
+    max-height: 50vh;
+    width: 90%;
+    object-fit: contain;
   }
   
   #all-images .active{
@@ -73,6 +60,8 @@ body{
     text-align: left;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 5%;
+    max-height: 40vh;
   }
 
   #text-box{
@@ -100,6 +89,8 @@ body{
     line-height: normal;
     font-size: small;
     margin-bottom: -10px;
+    overflow: auto;
+    max-height: 20vh;
   }
 
   #extraLink{
@@ -107,382 +98,7 @@ body{
     font-size: small;
   }
 
-  
-  #Pity_WilliamBlake{
-    position: relative;
-    top: 10%;
-  }
-  #TheBattleOfSanRomano_PaoloUccello{
-    position: relative;
-    top: 60%;
-  }
-  #TwoWomen_MaryCockburnMercer{
-    position: relative;
-    top: 45%;
-  }
-  #MotherAndChild1907_Pablo{
-    position: relative;
-    top: -30%;
-  }
-  #IfNot{
-    position: relative;
-    top: -5%;
-  }
-  #QFromTheRainbowAphorismsSeries_DavidMcDiarmid{
-    position: relative;
-    top: 0%;
-  }
-  #GreatStillLifeOnPedestal_PabloPicasso{
-    position: relative;
-    top: 10%;
-  }
-  #Rembrandt{
-    position: relative;
-    top: 0%;
-  }
-  #PankASquith_Women{
-    position: relative;
-    top: 0%;
-  }
-  #Lamentation{
-    position: relative;
-    top: 20%;
-  }
-  #Primavera{
-    position: relative;
-    top: -25%;
-  }
-  #TheGreatWave{
-    position: relative;
-    top: -25%;
-  }
-  #LittleThuy{
-    position: relative;
-    top: -25%;
-  }
-  #TheScream{
-    position: relative;
-    top: -5%;
-  }
-  #TheRhinoceros{
-    position: relative;
-    top: -0%;
-  }
-  #ThePreciousBook{
-    position: relative;
-    top: -15%;
-  }
-  #WomenAndBirdInTheMoonlight{
-    position: relative;
-    top: -22%;
-  }
-  #DanteRunningFromtheThreeBeasts{
-    position: relative;
-    top: -10%;
-  }
-  #Ophelia{
-    position: relative;
-    top: -100%;
-  }
-  #Self-PortraitAsTheAllegoryOfPainting{
-    position: relative;
-    top: -100%;
-  }
-  #Self-PortraitWithThornNecklaceAndHummingbird{
-    position: relative;
-    top: -80%;
-  }
-  #LeGrandCanal{
-    position: relative;
-    top: -100%;
-  }
-  #TheKiss{
-    position: relative;
-    top: -90%;
-  }
-  #ArnolfiniPortrait{
-    position: relative;
-    top: -100%;
-  }
-  #SexyRobot{
-    position: relative;
-    top: -5%;
-  }
-  #ArtDeco1930s{
-    position: relative;
-    top: -90%;
-  }
-  #Bathers{
-    position: relative;
-    top: -90%;
-    width: 70%;
-  }
-  #SorrowOfTheKing{
-    position: relative;
-    top: -90%;
-    left: -20%;
-    width: 90%;
-  }
-  #WilliamAndShirleyFloraAndFauna{
-    position: relative;
-    top: -90%;
-  }
-
-  #ForestCunningham{
-    position: relative;
-    top: -60%;
-  }
-  
-  #ASundayOnLaGrandeJatte{
-    position: relative;
-    top: -60%;
-  }
-  #Untitled1982{
-    position: relative;
-    top: -60%;
-  }
-  #QueenslandNaive{
-    position: relative;
-    top: -60%;
-  }
-  #GirlWithAPearlEarring{
-    position: relative;
-    top: -60%;
-  }
-  #BirdStealingBaby{
-    position: relative;
-    top: -60%;
-  }
-  #WaterLillies{
-    position: relative;
-    top: -60%;
-  }
-  #TheFightingTemeraire{
-    position: relative;
-    top:-60%;
-  }
-  #StarryNight{
-    position: relative;
-    top: -80%;
-  }
-  #Nighthawks{
-    position: relative;
-    top: -80%;
-  }
-  #PaulGuilaume{
-    position: relative;
-    top: -120%;
-  }
-  #Heritage{
-    position: relative;
-    top: -130%;
-  }
-  #SpiritOfThePlains{
-    position: relative;
-    top: -120%;
-  }
-
-  #BonnieSue1964{
-    position: relative;
-    top: -100%;
-  }
-  #NudeWomenReading{
-    position: relative;
-    top: -100%;
-  }
-  #LasMeninas{
-    position: relative;
-    top: -100%;
-  }
-  #PreparingToGoOut{
-    position: relative;
-    top: -130%;
-  }
-  #Self-portraitWithModel{
-    position: relative;
-    top: -142%;
-  }
-  #YellowRedBlue{
-    position: relative;
-    top: -85%;
-  }
-  #PortraitOfDoraMara{
-    position: relative;
-    top: -90%;
-  }
-  #BoulevardMontmartre{
-    position: relative;
-    top: -90%;
-  }
-  #ActualFractual{
-    position: relative;
-    top: -140%;
-  }
-  #TheHuntersInTheSnow{
-    position: relative;
-    top: -140%;
-  }
-  #TigerInATropicalStorm{
-    position: relative;
-    top: -140%;
-  }
-  #HaystackInTheMorning{
-    position: relative;
-    top: -90%;
-  }
-  #BruteFolly{
-    position: relative;
-    top: -65%;
-  }
-  #WaxDogsOnLakeEyre{
-    position: relative;
-    top: -140%;
-  }
-  #Summertime{
-    position: relative;
-    top: -140%;
-  }
-  #BalDuMoulinDeLaGalette{
-    position: relative;
-    top: -90%;
-  }
-  #UntitledDog{
-    position: relative;
-    top: -130%;
-  }
-  #IdeasOfBarak{
-    position: relative;
-    top: -130%;
-  }
-  #Number6{
-    position: relative;
-    top: -120%;
-  }
-  #WhenWillYouMarry{
-    position: relative;
-    top: -120%;
-  }
-  #TeaAndCoffeeSalon{
-    position: relative;
-    top: -80%;
-  }
-  #TheSonOfMan{
-    position: relative;
-    top: -80%;
-  }
-  #IAmAMermaid{
-    position: relative;
-    top: -105%;
-  }
-  #ElephantWalking{
-    position: relative;
-    top: -130%;
-  }
-  #MonaLisa{
-    position: relative;
-    top: -130%;
-  }
-  #HouseAtAuvers{
-    position: relative;
-    top: -120%;
-  }
-  #TheBanquetOfCleopatra{
-    position: relative;
-    top: -120%;
-  }
-  #HorsesBathingInTheSea{
-    position: relative;
-    top: -80%;
-  }
-  #ThePersistanceOfMemory{
-    position: relative;
-    top: -320%;
-  }
-  #DancersInBlue{
-    position: relative;
-    top: -280%;
-  }
-  #MorningSunlightOnTheSnow{
-    position: relative;
-    top: -270%;
-  }
-  #FlyingCloud{
-    position: relative;
-    top: -230%;
-  }
-  #TheWaterLilyPond{
-    position: relative;
-    top: -230%;
-  }
-  #ItsOurDestiny{
-    position: relative;
-    top: -200%;
-  }
-  #AbstractPainting{
-    position: relative;
-    top: -200%;
-  }
-  #HamLongStreet{
-    position: relative;
-    top: -190%;
-  }
-  #SelfPortrait1889{
-    position: relative;
-    top: -180%;
-  }
-  #DrySalvages{
-    position: relative;
-    top: -180%;
-  }
-  #TheLacquerRoom{
-    position: relative;
-    top: -170%;
-  }
-  #JetStream{
-    position: relative;
-    top: -130%;
-  }
-  #MeadowWithPoplars{
-    position: relative;
-    top: -130%;
-  }
-  #MondayMorning{
-    position: relative;
-    top: -170%;
-  }
-  #WomanInAnArmchair{
-    position: relative;
-    top: -170%;
-  }
-  #ASceneOnTheIceNearATown{
-    position: relative;
-    top: -110%;
-  }
-  #ApplesAndOranges{
-    position: relative;
-    top: -110%;
-  }
-  #AgainstAllOdds{
-    position: relative;
-    top: -250%;
-  }
-  #HorsemanInLandscape{
-    position: relative;
-    top: -250%;
-  }
-  #MortaruruWithRedOverhead{
-    position: relative;
-    top: -250%;
-  }
-  #ALionAttackingAHorse{
-    position: relative;
-    top: -250%;
-  }
-  #ManInBlue{
-    position: relative;
-    top: -230%;
-  }
-  #SpringScene{
-    position: relative;
-    top: -230%;
+  #svg_file{
+    display: flex;
+    width: 100%;
   }
