@@ -733,7 +733,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
+      "comment": "As a part of year 10 English we had to listen to this song called Starry Starry Night and write about our feelings and how it was inspired by this painting. Coincidentally, this was also around the time that I grew dissallusioned in English as a subject.",
       "extraLink": ""
     },
     "0804_Nighthawks_EdwardHopper":{
