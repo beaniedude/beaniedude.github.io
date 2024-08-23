@@ -478,7 +478,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "This is a classic piece. It was hailed as pornographic at the time of its unveiling. Actual gold leaf used in it as well.",
+      "comment": "This is a classic piece. It was hailed as pornographic at the time of its unveiling. Actual gold leaf was used in it as well. Not in this postcard though, so please don't steal it.",
       "extraLink": "https://www.gustav-klimt.com/The-Kiss.jsp"
     },
     "0506_ArnolfiniPortrait_VanEyck":{
@@ -512,7 +512,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
+      "comment": "BEEP BOOP. HELLO HUMAN. I AM A SEXY ROBOT. LOOK AT MY SEXY RING. BEEP BOOP.",
       "extraLink": ""
     },
     "0601_ArtDeco1930s":{
@@ -678,12 +678,12 @@ function display_popup_from_svg(id_of_painting){
       "yod": 1926,
       "pod": "Giverny",
       "paintingDate": "1920-1926",
-      "medium": "",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Monet loved nothing more than slinging out the paint and flipping together some water lillies. I mean, if you're good at what you do, but some variety would be nice. He painted a lot of these in the last 30 years of his life when he had catarats which might explain why they're so splodgy.",
+      "extraLink": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)"
     },
     "0801_ASundayOnLaGrandeJatte_GeorgesSeurat":{
       "art": "0801_ASundayOnLaGrandeJatte_GeorgesSeurat",
@@ -716,7 +716,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
+      "comment": "Look at the lights, look at the colours. The full name of this piece is, <i>The Fighting Temeraire, tugged to her last berth to be broken up</i> which is too long to be snappy. It reminds me of the Elven ships sailing east - does it remind you of anything?",
       "extraLink": ""
     },
     "0803_StarryNight_VanGogh":{
