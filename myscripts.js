@@ -1,61 +1,24 @@
-// $( document ).ready(function(){
-//     // without animation
-//     /*
-//     $("#close-btn").click(function(){
-//        $(".small-image").removeClass('active');
-//       $("#show_image_popup").hide();
-//     })
-  
-  
-//     $(".small-image").click(function(){
-//        // add active class
-//        $(this).addClass('active');
-//       var image_path = $(this).attr('src'); 
-//       $("#show_image_popup").hide();
-//       // now st this path to our popup image src
-//       $("#show_image_popup").show();
-//       $("#large-image").attr('src',image_path);
-  
-//     })
-//   */
-  
-//     // with animation  
-  
-//       $("#close-btn").click(function(){
-//          // remove active class from all images
-//         $(".small-image").removeClass('active');
-//         $("#show_image_popup").slideUp();
-//       })
-  
-//       $(".small-image").click(function(){
-//           // remove active class from all images
-//          $(".small-image").removeClass('active');
-//         // add active class
-//          $(this).addClass('active');
-  
-//         var image_path = $(this).attr('src'); 
-//         $("#show_image_popup").fadeOut();
-//         // now st this path to our popup image src
-//         $("#show_image_popup").fadeIn();
-//         $("#large-image").attr('src',image_path);
-  
-//       })
-  
-//   })
-
   var small_images  = document.getElementsByClassName("small-image");
   var show_image_popup  = document.getElementById("show_image_popup");
   var large_image  = document.getElementById("large-image");
   var close_btn = document.getElementById("close-btn");
   
-  window.addEventListener("load",function(){
-  var svgObject = document.getElementById('svg_file').contentDocument;
-  var svg = svgObject.getElementsByClassName("small-image")
-  });
+  document.getElementById('svg_file').addEventListener('load', function() {
+    var svgDoc = this.contentDocument; // Access the SVG document inside <object>
+    var images = svgDoc.querySelectorAll('image'); // Get all <image> elements
+
+    images.forEach(function(image) {
+      image.addEventListener('click', function() {
+        // Handle the click event
+        var id_of_painting = image.getAttribute('id');
+        display_popup_from_svg(id_of_painting);
+      })})});
+        
   
 function display_popup_from_svg(id_of_painting){
   var filepath='images/individual_art/'+id_of_painting+'.jpg'
   large_image.src=filepath
+
   var artistString = '<em>'+artData[id_of_painting]["artist"]+'</em>'+' ('+artData[id_of_painting]['nationality']+', '+artData[id_of_painting]['yob']+'-'+artData[id_of_painting]['yod']+')';
   var titleString = '<i><b>'+artData[id_of_painting]['title']+',</i></b>'+' '+artData[id_of_painting]['paintingDate'];
   var mediumString = artData[id_of_painting]['medium'];
@@ -74,17 +37,9 @@ function display_popup_from_svg(id_of_painting){
   }
   
   close_btn.addEventListener("click", function(){
-    // before colose the modal we need to remove active class
-    for(var i=0; i< small_images.length; i++){
-      small_images[i].classList.remove('active');
-    }
-    // end
-    closeModal();
+    show_image_popup.style.display = 'none';
   });
   
-  function closeModal(){
-    show_image_popup.style.display = 'none';
-  }
 
 
   //writing in all the artData, there must be a cleaner way to do this. JS is so janky
