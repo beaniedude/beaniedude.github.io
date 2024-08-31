@@ -22,13 +22,13 @@ function display_popup_from_svg(id_of_painting){
   var artistString = '<em>'+artData[id_of_painting]["artist"]+'</em>'+' ('+artData[id_of_painting]['nationality']+', '+artData[id_of_painting]['yob']+'-'+artData[id_of_painting]['yod']+')';
   var titleString = '<i><b>'+artData[id_of_painting]['title']+',</i></b>'+' '+artData[id_of_painting]['paintingDate'];
   var mediumString = artData[id_of_painting]['medium'];
-  var extraLinkString = 'For more information please visit <a href='+artData[id_of_painting]["extraLink"]+'> this site</a>.';
+  var commentString = artData[id_of_painting]['comment']+'<br>For more information please visit <a href='+artData[id_of_painting]["extraLink"]+'> this site</a>.';
+  
   
   document.getElementById("title").innerHTML = titleString;
   document.getElementById("artist").innerHTML = artistString;
   document.getElementById('medium').innerHTML = mediumString;
-  document.getElementById('comment').innerHTML = artData[id_of_painting]['comment']
-  document.getElementById('extraLink').innerHTML = extraLinkString
+  document.getElementById('comment').innerHTML = commentString;
   showModal();
 }
   
@@ -59,7 +59,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "Romanticism?",
       "genre": "",
       "period": "",
-      "comment": "This artwork is a literal illustration of a double simile from <i>Macbeth</i>, found in the lines: <blockquote>And pity, like a naked new-born babe,\nStriding the blast, or heaven's cherubim, hors'd\nUpon the sightless couriers of the air.\n- Macbeth (1.7.21–23)[3]</blockquote>",
+      "comment": "This artwork is a literal illustration of a double simile from <i>Macbeth</i>, found in the lines: <blockquote>And pity, like a naked new-born babe,\nStriding the blast, or heaven's cherubim, hors'd\nUpon the sightless couriers of the air.\n- Macbeth (1.7.21–23)</blockquote>",
       "extraLink": "https://www.metmuseum.org/art/collection/search/347416"
     },
     '0102_TheBattleOfSanRomano_PaoloUccello':{
@@ -76,7 +76,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "The Battle of San Romano is a set of three paintings by the Florentine painter Paolo Uccello depicting events that took place at the Battle of San Romano between Florentine and Sienese forces in 1432. They are significant as revealing the development of linear perspective in early Italian Renaissance painting, and are unusual as a major secular commission. The paintings are in egg tempera on wooden panels, each over 3 metres long. According to the National Gallery,[1] the panels were commissioned by a member of the Bartolini Salimbeni family in Florence sometime between 1435 and 1460. The paintings were much admired in the 15th century; Lorenzo de' Medici so coveted them that he purchased one and had the remaining two forcibly removed to the Palazzo Medici. They are now divided between three collections, the National Gallery, London, the Galleria degli Uffizi, Florence, and the Musée du Louvre, Paris.",
+      "comment": "The Battle of San Romano is a set of three paintings by the Florentine painter Paolo Uccello depicting events that took place at the Battle of San Romano between Florentine and Sienese forces in 1432. Each of them are like three meters long, so much bigger than what you are looking at here. Heartbreakingly, all three pieces are divided between three collections, the National Gallery, London, the Galleria degli Uffizi, Florence, and the Musée du Louvre, Paris.",
       "extraLink": "https://www.beyondtheyalladog.com/2013/08/the-battle-of-san-romano-in-separate-pieces/"
     },
     '0103_TwoWomen_MaryCockburnMercer':{
@@ -127,7 +127,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Believe it or not, this is a self portrait. The artist is the one holding the baby in bed. This piece also makes many references to TS Elliot's poem The Waste Land. I think it's about the holocaust? The artist is Jewish and has a few pieces exploring that subject. Also great name for a painting.",
+      "comment": "Believe it or not, this is a self portrait. The artist is the one holding the baby in bed. This piece also makes many references to TS Elliot's poem <i>The Waste Land</i>. I think it's about the holocaust? The artist is Jewish and has a few pieces exploring that subject. Also, great name for a painting.",
       "extraLink": "https://www.nationalgalleries.org/art-and-artists/644/if-not-not"
     },
     "0203_QFromTheRainbowAphorismsSeries_DavidMcDiarmid":{
@@ -166,7 +166,7 @@ function display_popup_from_svg(id_of_painting){
     },
     "0205_RembrandtSelf-PortraitWithTwoCircles_Rembrandt":{
       "art": "0205_RembrandtSelf-PortraitWithTwoCircles_Rembrandt",
-      "title": "Self Portrait with Two Circles",
+      "title": "Self-Portrait with Two Circles",
       "artist": "Rembrandt Harmenszoon van Rijn",
       "nationality": "Dutch",
       "pob": "Leiden",
@@ -185,17 +185,17 @@ function display_popup_from_svg(id_of_painting){
       "art": "0206_PankASquith",
       "title": "Pank-a-Squith",
       "artist": "British Women's Social and Political Union",
-      "nationality": "-",
+      "nationality": "British",
       "pob": "-",
-      "yob": "-",
-      "yod": "-",
+      "yob": "1903",
+      "yod": "1918",
       "pod": "-",
       "paintingDate": "c. 1909",
       "medium": "Ink on board",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Roll on up and roll the dice because this one is a board game! Pank-a-Squith was a political board game about the suffragette movement created around 1909. It was created for the British Women's Social and Political Union as a way to generate funds and help spread women's suffrage ideologies. You roll the dice to move the women closer to Parliament house.",
+      "comment": "Roll on up and roll the dice because this one is a board game! Pank-a-Squith was a political board game about the suffragette movement created around 1909. It was created for the British Women's Social and Political Union as a way to generate funds and help spread women's suffrage ideologies. You roll the dice to move the women closer to Parliament house. Thankfully this is now over a century old and a thing of the past.",
       "extraLink": "https://boardgamegeek.com/boardgame/14249/pank-squith"
     },
     "0207_LamentationTheMourningOfChrist_Giotto":{
@@ -280,7 +280,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "This is a woodcut of a rhinocerus that the artist never saw. Instead, this woodcut is based on an anonymous written description and brief sketch of an Indian rhinocerus brought to Lisbon in 1515. The rhinocerus in question subsequently died at sea when the King sent it to the pope as a gift. There is a german inscription on the woodcut that reads: \"On the first of May in the year 1513 AD [sic], the powerful King of Portugal, Manuel of Lisbon, brought such a living animal from India, called the rhinoceros. This is an accurate representation. It is the colour of a speckled tortoise,[1][d] and is almost entirely covered with thick scales. It is the size of an elephant but has shorter legs and is almost invulnerable. It has a strong pointed horn on the tip of its nose, which it sharpens on stones. It is the mortal enemy of the elephant. The elephant is afraid of the rhinoceros, for, when they meet, the rhinoceros charges with its head between its front legs and rips open the elephant's stomach, against which the elephant is unable to defend itself. The rhinoceros is so well-armed that the elephant cannot harm it. It is said that the rhinoceros is fast, impetuous and cunning",
+      "comment": "This is a woodcut of a rhinocerus that the artist never saw. Instead, this woodcut is based on an anonymous written description and brief sketch of an Indian rhinocerus brought to Lisbon in 1515. The rhinocerus in question subsequently died at sea when the King sent it to the Pope as a gift. There is a German inscription on the woodcut that reads: <br>\"On the first of May in the year 1513 AD [sic], the powerful King of Portugal, Manuel of Lisbon, brought such a living animal from India, called the rhinoceros. This is an accurate representation. It is the colour of a speckled tortoise, and is almost entirely covered with thick scales. It is the size of an elephant but has shorter legs and is almost invulnerable. It has a strong pointed horn on the tip of its nose, which it sharpens on stones. It is the mortal enemy of the elephant. The elephant is afraid of the rhinoceros, for, when they meet, the rhinoceros charges with its head between its front legs and rips open the elephant's stomach, against which the elephant is unable to defend itself. The rhinoceros is so well-armed that the elephant cannot harm it. It is said that the rhinoceros is fast, impetuous and cunning.",
       "extraLink": "https://www.rct.uk/collection/800198/a-rhinoceros"
     },
     "0305_ThePreciousBook_GwenJohn":{
@@ -416,7 +416,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "<i>Le Grand Canal</i> (or <i>The Grand Canal</i> in english) is one of six paintings looking down the canal towards the Salute Church. It's sort of like Magic: The Gathering where you have alternative art of the same card.it sold for $35 million in 2015. Here you can see it in the Toilet Gallery completely free of charge.",
+      "comment": "<i>Le Grand Canal</i> (or <i>The Grand Canal</i> in english) is one of six paintings looking down the canal towards the Salute Church. It's sort of like Magic: The Gathering where you have alternative art of the same card. It sold for $35 million in 2015. Here you can see it in the Toilet Gallery completely free of charge.",
       "extraLink": "https://en.wikipedia.org/wiki/Le_Grand_Canal"
     },
     "0505_TheKiss_GustavKlimt":{
@@ -474,10 +474,10 @@ function display_popup_from_svg(id_of_painting){
       "art": "0601_ArtDeco1930s",
       "title": "Art, Goût, Beauté",
       "artist": "Art, Goût, Beauté",
-      "nationality": "-",
+      "nationality": "French",
       "pob": "-",
-      "yob": "-",
-      "yod": "-",
+      "yob": "1921",
+      "yod": "1933",
       "pod": "-",
       "paintingDate": "c.1921-1933",
       "medium": "Stencil",
@@ -518,7 +518,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Ooooh, I'm the king and I'm sad', is what I imagine the art is saying. This is actually Henri Matisse's last self-portrait. He was in poor health and by the 1950s we had given up painting in favour of creating these collages.",
+      "comment": "'Ooooh, I'm the king and I'm sad', is what I imagine the art is saying. This is actually Henri Matisse's last self-portrait. He was in poor health and by the 1950s we had given up painting in favour of creating these collages.",
       "extraLink": "https://www.henrimatisse.org/sorrow-of-the-king.jsp"
     },
     "0604_WilliamAndShirleyFloraAndFauna":{
@@ -793,9 +793,9 @@ function display_popup_from_svg(id_of_painting){
       "comment": "Here we see a nude woman reading.",
       "extraLink": "https://artsandculture.google.com/asset/nude-woman-reading-robert-delaunay/-QFbKBNtET-twQ?hl=en"
     },
-    "0905_LasMeninas_DiegoVelázquez":{
+    "0905_LasMeninas_DiegoVelazquez":{
       "art": "0905_LasMeninas_DiegoVelázquez",
-      "title": "",
+      "title": "Las Meninas",
       "artist": "Diego Velázquez",
       "nationality": "Spanish",
       "pob": "Seville",
@@ -807,127 +807,127 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
+      "comment": "If you feel judged while looking at this one, then I'm right there alongside you.",
       "extraLink": "https://www.britannica.com/topic/Las-meninas"
     },
     "1001_PreparingToGoOut_TaniguchiFumie":{
       "art": "1001_PreparingToGoOut_TaniguchiFumie",
-      "title": "",
+      "title": "Preparing to go Out",
       "artist": "Fumie Taniguchi",
       "nationality": "Japanese",
       "pob": "Tokyo",
       "yob": 1910,
       "yod": 2001,
       "pod": "Los Angeles",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1935",
+      "medium": "six panel folding screen: ink, colour pigment on silk",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
+      "comment": "Just a couple of gals preparing to go out.",
       "extraLink": "https://www.ngv.vic.gov.au/essay/rediscovering-fumie-taniguchi/"
     },
     "1002_Self-portraitWithModel_ErnestLudwigKirchner":{
       "art": "1002_Self-portraitWithModel_ErnestLudwigKirchner",
-      "title": "",
+      "title": "Self-portait with model",
       "artist": "Ernest Ludwig Kirchner",
       "nationality": "German",
       "pob": "Aschaffenburg",
       "yob": 1880,
       "yod": 1938,
       "pod": "Frauenkirch",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "c.1910",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Jeremy always thinks that this one looks like himself and Tara. Jeremy being the painter (inaccurate) and Tara being the attractive one (accurate).",
+      "extraLink": "https://www.artchive.com/artwork/self-portrait-with-model-ernst-ludwig-kirchner-1910/"
     },
     "1003_YellowRedBlue_WassilyKandinsky":{
       "art": "1003_YellowRedBlue_WassilyKandinsky",
-      "title": "",
+      "title": "Yellow-Red-Blue",
       "artist": "Wassily Kandinsky",
       "nationality": "Russian",
       "pob": "Moscow",
       "yob": 1866,
       "yod": 1944,
       "pod": "Neuilly-sur-Seine",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1925",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "This one screams music to me. It's what I imagine notes look like as they dance off the page and into an unsuspecting ear.",
+      "extraLink": "https://www.wassily-kandinsky.org/Yellow-Red-Blue.jsp"
     },
     "1004_PortraitOfDoraMara_PabloPicasso":{
       "art": "1004_PortraitOfDoraMara_PabloPicasso",
-      "title": "",
+      "title": "Portrait of Dora Maar",
       "artist": "Pablo Picasso",
       "nationality": "Spanish",
       "pob": "Málaga",
       "yob": 1881,
       "yod": 1973,
       "pod": "Mougins",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1937",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Who is Dora Maar? The painter's lover.",
+      "extraLink": "https://www.theguardian.com/artanddesign/2019/nov/15/dora-maar-picassos-weeping-woman"
     },
     "1005_BoulevardMontmartre_CamillePissarro":{
       "art": "1005_BoulevardMontmartre_CamillePissarro",
-      "title": "",
+      "title": "The Boulevard Montmartre on a Winter Morning",
       "artist": "Camille Pissarro",
       "nationality": "Danish-French",
       "pob": "Charlotte Amalie",
       "yob": 1830,
       "yod": 1903,
       "pod": "Paris",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1897",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Gray and dreary the mornings be. I hope you are enjoying your pee.",
+      "extraLink": "https://www.metmuseum.org/art/collection/search/437310"
     },
     "1101_ActualFractual_HowardArkley":{
       "art": "1101_ActualFractual_HowardArkley",
-      "title": "",
+      "title": "Actual fractual",
       "artist": "Howard Arkley",
       "nationality": "Australian",
       "pob": "Melbourne",
       "yob": 1951,
       "yod": 1999,
       "pod": "Mebourne",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1994",
+      "medium": "Synthetic polymer paint on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "What does 'fractual' mean? Your guess is as good as mine. Is it referencing fractals? Facts? I have no idea.",
+      "extraLink": "https://www.ngv.vic.gov.au/school_resource/suburban-collages-inspired-by-howard-arkleys-actual-fractual/"
     },
     "1102_TheHuntersInTheSnow_PeterBruegel":{
       "art": "1102_TheHuntersInTheSnow_PeterBruegel",
-      "title": "",
+      "title": "Hunters in the Snow (Winter)",
       "artist": "Pieter Bruegel the Elder",
       "nationality": "Dutch",
       "pob": "Breda or Breugel",
       "yob": "c. 1525-1530",
       "yod": 1569,
       "pod": "Brussels",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1565",
+      "medium": "Oil on wood",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Beautiful painting.",
+      "extraLink": "https://smarthistory.org/pieter-bruegel-the-elder-hunters-in-the-snow-winter/"
     },
     "1103_TigerInATropicalStorm_HenriRousseau":{
       "art": "1103_TigerInATropicalStorm_HenriRousseau",
@@ -938,115 +938,115 @@ function display_popup_from_svg(id_of_painting){
       "yob": 1844,
       "yod": 1910,
       "pod": "Paris",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1891",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Whenever I am sad I look at this tiger's face and the world seems that little bit better. Just look at that tiger's face. How could it not make you happy? An alternate title for this piece is <i>Surpised!</i>",
+      "extraLink": "https://www.youtube.com/watch?v=JQYrBWnJW4s"
     },
     "1104_HaystackInTheMorning_ClaudeMonet":{
       "art": "1104_HaystackInTheMorning_ClaudeMonet",
-      "title": "",
+      "title": "Haystack, Morning Snow Effect",
       "artist": "Claude Monet",
       "nationality": "French",
       "pob": "Paris",
       "yob": 1840,
       "yod": 1926,
       "pod": "Giverny",
-      "paintingDate": "",
+      "paintingDate": "1891",
       "medium": "",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Hey look, it's Monet. Let's flip a coin and see if it is going to be a haystack or a water lily. It is fascinating to see all the haystacks lined up next to each other and the differences between them (see the link). But get a different subject my guy.",
+      "extraLink": "https://en.wikipedia.org/wiki/Haystacks_(Monet_series)"
     },
     "1105_BruteFolly_FranciscoGoyaYLucientes":{
       "art": "1105_BruteFolly_FranciscoGoyaYLucientes",
-      "title": "",
+      "title": "Brute folly (Disparate de bestia)",
       "artist": "Francisco Goya",
       "nationality": "Spanish",
       "pob": "Fuendetodos",
       "yob": 1746,
       "yod": 1828,
       "pod": "Bordeaux",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "c.1816-1823",
+      "medium": "Etching and aquatint in dark umber ink",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "This elephant looks like it has walked up to you as you exit a night club, looking to bum some peanuts.",
+      "extraLink": "https://www.ngv.vic.gov.au/explore/collection/work/26000/"
     },
     "1201_WaxDogsOnLakeEyre_LinOnus":{
       "art": "1201_WaxDogsOnLakeEyre_LinOnus",
-      "title": "",
+      "title": "Wax Dogs on Lake Eyre",
       "artist": "Lin Onus",
       "nationality": "Australian",
       "pob": "Boroondara",
       "yob": 1948,
       "yod": 1996,
       "pod": "Naarm",
-      "paintingDate": "",
+      "paintingDate": "unknown painting date",
       "medium": "",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
+      "comment": "This one took forever to hunt down. You lot don't appreciate just how much effort goes into some of these. This digital image was buried in a pdf of a brochure I found online. However, I could not find the painting date.",
       "extraLink": "https://www.artgallery.nsw.gov.au/collection/artists/onus-lin/"
     },
     "1202_Summertime_MaryCassatt":{
       "art": "1202_Summertime_MaryCassatt",
-      "title": "",
+      "title": "Summertime",
       "artist": "Mary Cassat",
       "nationality": "American",
       "pob": "Allegheny",
       "yob": 1844,
       "yod": 1926,
       "pod": "Château de Beaufresne",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1894",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "You just know that at least one hat will be lost to those murky depths. This piece was influenced by Japanese art, much in the same way that <i>My Adventures with Superman</i> invokes anime tropes.",
+      "extraLink": "https://conversations.terraamericanart.org/artworks/summertime/"
     },
     "1203_BalDuMoulinDeLaGalette_Pierre-AugusteRenoir":{
       "art": "1203_BalDuMoulinDeLaGalette_Pierre-AugusteRenoir",
-      "title": "",
+      "title": "Bal du moulin de la Galette",
       "artist": "Pierre-Auguste Renoir",
       "nationality": "French",
       "pob": "Limoges",
       "yob": 1841,
       "yod": 1919,
       "pod": "Cagnes-sur-Mer",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1876",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "The painting depicts a typical Sunday afternoon at the original Moulin de la Galette in the district of Montmartre in Paris. In the late 19th century, working-class Parisians would dress up and spend time there dancing, drinking, and eating galettes into the evening. Which is a lovely way to spend a Sunday.",
+      "extraLink": "https://en.wikipedia.org/wiki/Bal_du_moulin_de_la_Galette"
     },
     "1301_UntitledDog_KeithHarring":{
       "art": "1301_UntitledDog_KeithHarring",
-      "title": "",
+      "title": "Untitled (Dog Dancing)",
       "artist": "Keith Harring",
       "nationality": "American",
       "pob": "Reading",
       "yob": 1958,
       "yod": 1990,
       "pod": "New York",
-      "paintingDate": "",
+      "paintingDate": "1980s sometime",
       "medium": "",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "For some reason this artwork is all over the online auction houses. People can't get enough of it I suppose. I also took the squiggles to spell 'Ini' but on further reflection they appear to be movement lines.",
+      "extraLink": "https://www.ngv.vic.gov.au/school_resource/digital-creatives-keith-harings-digital-dance-club/"
     },
     "1302_IdeasOfBarak_VernonAhKee":{
       "art": "1302_IdeasOfBarak_VernonAhKee",
