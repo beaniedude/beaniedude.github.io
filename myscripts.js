@@ -937,7 +937,7 @@ function display_popup_from_svg(id_of_painting){
     },
     "1103_TigerInATropicalStorm_HenriRousseau":{
       "art": "1103_TigerInATropicalStorm_HenriRousseau",
-      "title": "",
+      "title": "Tiger in a Tropical Storm",
       "artist": "Henri Rousseau",
       "nationality": "French",
       "pob": "Laval",
