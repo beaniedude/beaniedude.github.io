@@ -16,7 +16,13 @@
         
   
 function display_popup_from_svg(id_of_painting){
+  if (id_of_painting == '1401_ElephantWalking_EadweardMuybridge'){
+    var filepath='images/individual_art/'+id_of_painting+'.gif'  
+  } else if(id_of_painting=='1502_DancersInBlue_EdgarDagas'){
+    var filepath='images/individual_art/'+id_of_painting+'.png'      
+  } else{
   var filepath='images/individual_art/'+id_of_painting+'.jpg'
+  };
   large_image.src=filepath
 
   var artistString = '<em>'+artData[id_of_painting]["artist"]+'</em>'+' ('+artData[id_of_painting]['nationality']+', '+artData[id_of_painting]['yob']+'-'+artData[id_of_painting]['yod']+')';
@@ -72,7 +78,7 @@ function display_popup_from_svg(id_of_painting){
       "yod": 1475,
       "pod": "Florence",
       "paintingDate": "c. 1438-1440",
-      "medium": "Egg tempera with walnut oil and linssed oil on poplar",
+      "medium": "Egg tempera with walnut oil and linseed oil on poplar",
       "style": "",
       "genre": "",
       "period": "",
@@ -110,7 +116,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "Cubism",
       "genre": "",
       "period": "",
-      "comment": "This is classic Picasso. See how the faces don't look like faces but they feel like faces? Classic Picasso. This is one of many paintings by Picasso depicting a mother and child. So I don't know if he had a weird Freud thing going on, or just lived the subject matter. It also made hunting down this particular mother and child quite difficult. So, you're welcome.",
+      "comment": "This is classic Picasso. See how the faces don't look like faces but they feel like faces? Classic Picasso. This is one of many paintings by Picasso depicting a mother and child. So, I don't know if he had a weird Freud thing going on, or just lived the subject matter. It also made hunting down this particular mother and child quite difficult. So, you're welcome.",
       "extraLink": "https://arthive.com/pablopicasso/works/376118~Mother_and_child"
     },
     "0202_IfNotNo_RonaldBrooksKitaj":{
@@ -127,7 +133,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Believe it or not, this is a self portrait. The artist is the one holding the baby in bed. This piece also makes many references to TS Elliot's poem <i>The Waste Land</i>. I think it's about the holocaust? The artist is Jewish and has a few pieces exploring that subject. Also, great name for a painting.",
+      "comment": "Believe it or not, this is a self-portrait. The artist is the one holding the baby in bed. This piece also makes many references to TS Elliot's poem <i>The Waste Land</i>. I think it is about the holocaust? The artist is Jewish and has a few pieces exploring that subject. Also, great name for a painting.",
       "extraLink": "https://www.nationalgalleries.org/art-and-artists/644/if-not-not"
     },
     "0203_QFromTheRainbowAphorismsSeries_DavidMcDiarmid":{
@@ -144,7 +150,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "So this one is a bit hard to pin down. There was a Rainbow Aphorism series and this one is one of them. David MacDiarmid was an artist, designer and political activist, recognised for his prominent and sustained artistic engagement in issues relating to gay male identity and HIV/AIDS. He is also known for his involvement in the gay liberation movement of the early 1970s, when he was the first person arrested at a gay rights protest in Australia, as well as his artistic direction of the Sydney Gay and Lesbian Mardi Gras. From its inception, McDiarmid's art career encompassed, as both subject and inspiration, gay male sexuality, politics and urban subcultures.",
+      "comment": "So this one is a bit hard to pin down. There was a Rainbow Aphorism series and this one is one of them. David MacDiarmid was an artist, designer, and political activist, recognised for his prominent and sustained artistic engagement in issues relating to gay male identity and HIV/AIDS. He is also known for his involvement in the gay liberation movement of the early 1970s, when he was the first person arrested at a gay rights protest in Australia, as well as his artistic direction of the Sydney Gay and Lesbian Mardi Gras. From its inception, McDiarmid's art career encompassed, as both subject and inspiration, gay male sexuality, politics, and urban subcultures.",
       "extraLink": "https://fabricquarterly.com.au/2020/10/i-want-a-future-that-lives-up-to-my-past-david-mcdiarmid-and-local-queer-stories/"
     },
     "0204_GreatStillLifeOnPedestal_PabloPicasso":{
@@ -178,7 +184,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Look at this absolute beast of a painter smashing together this self portrait. The self assured grin. He knows he's considered a master in his art. And then just to flex he throws in two perfectly drawn circles. Because why not?",
+      "comment": "Look at this absolute beast of a painter smashing together this self-portrait. The self-assured grin. He knows he is considered a master in his art. And then just to flex he throws in two perfectly drawn circles. Because why not?",
       "extraLink": "https://www.rembrandtpaintings.com/self-portrait-with-two-circle.jsp"
     },
     "0206_PankASquith":{
@@ -195,7 +201,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Roll on up and roll the dice because this one is a board game! Pank-a-Squith was a political board game about the suffragette movement created around 1909. It was created for the British Women's Social and Political Union as a way to generate funds and help spread women's suffrage ideologies. You roll the dice to move the women closer to Parliament house. Thankfully this is now over a century old and a thing of the past.",
+      "comment": "Roll on up and roll the dice because this one is a board game! Pank-a-Squith was a political board game about the suffragette movement created around 1909. It was created for the British Women's Social and Political Union to generate funds and help spread women's suffrage ideologies. You roll the dice to move the women closer to Parliament house. Thankfully this is now over a century old and a thing of the past.",
       "extraLink": "https://boardgamegeek.com/boardgame/14249/pank-squith"
     },
     "0207_LamentationTheMourningOfChrist_Giotto":{
@@ -280,7 +286,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "This is a woodcut of a rhinocerus that the artist never saw. Instead, this woodcut is based on an anonymous written description and brief sketch of an Indian rhinocerus brought to Lisbon in 1515. The rhinocerus in question subsequently died at sea when the King sent it to the Pope as a gift. There is a German inscription on the woodcut that reads: <br>\"On the first of May in the year 1513 AD [sic], the powerful King of Portugal, Manuel of Lisbon, brought such a living animal from India, called the rhinoceros. This is an accurate representation. It is the colour of a speckled tortoise, and is almost entirely covered with thick scales. It is the size of an elephant but has shorter legs and is almost invulnerable. It has a strong pointed horn on the tip of its nose, which it sharpens on stones. It is the mortal enemy of the elephant. The elephant is afraid of the rhinoceros, for, when they meet, the rhinoceros charges with its head between its front legs and rips open the elephant's stomach, against which the elephant is unable to defend itself. The rhinoceros is so well-armed that the elephant cannot harm it. It is said that the rhinoceros is fast, impetuous and cunning.",
+      "comment": "This is a woodcut of a rhinoceros that the artist never saw. Instead, this woodcut is based on an anonymous written description and brief sketch of an Indian rhinoceros brought to Lisbon in 1515. The rhinoceros in question subsequently died at sea when the King sent it to the Pope as a gift. There is a German inscription on the woodcut that reads: <br>\"On the first of May in the year 1513 AD [sic], the powerful King of Portugal, Manuel of Lisbon, brought such a living animal from India, called the rhinoceros. This is an accurate representation. It is the colour of a speckled tortoise, and is almost entirely covered with thick scales. It is the size of an elephant but has shorter legs and is almost invulnerable. It has a strong pointed horn on the tip of its nose, which it sharpens on stones. It is the mortal enemy of the elephant. The elephant is afraid of the rhinoceros, for, when they meet, the rhinoceros charges with its head between its front legs and rips open the elephant's stomach, against which the elephant is unable to defend itself. The rhinoceros is so well-armed that the elephant cannot harm it. It is said that the rhinoceros is fast, impetuous, and cunning.",
       "extraLink": "https://www.rct.uk/collection/800198/a-rhinoceros"
     },
     "0305_ThePreciousBook_GwenJohn":{
@@ -297,7 +303,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "Post-Impressionisim",
       "genre": "",
       "period": "",
-      "comment": "I couldn't find much information on this piece, only that it is now in the public domain. She's holding the book with a handkerchief, I suppose that makes the book precious.",
+      "comment": "I couldn't find much information on this piece, only that it is now in the public domain. She is holding the book with a handkerchief, I suppose that makes the book precious.",
       "extraLink": "https://www.wikiart.org/en/gwen-john/the-precious-book"
     },
     "0306_WomenAndBirdInTheMoonlight_JoanMiro":{
@@ -348,7 +354,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "I got a coffee mug with this image on it. It's a beautiful piece and has been parodied and been an influence for many works throughout the ages. This is a part of a series of other artworks depicting Fuji-Yama and sure enough, Fuji-Yama is at the back, capped in snow. As Japanese read right to left one can argue that the proper way to view this image is to invert it. Doing so makes the wave feel more dangerous, as if it will crush the boat.",
+      "comment": "I got a coffee mug with this image on it. It is a beautiful piece and has been parodied and been an influence for many works throughout the ages. This is a part of a series of other artworks depicting Fuji-Yama and sure enough, Fuji-Yama is at the back, capped in snow. As Japanese read right to left one can argue that the proper way to view this image is to invert it. Doing so makes the wave feel more dangerous, as if it will crush the boat.",
       "extraLink": "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
     },
     "0501_Ophelia_JohnEverettMillais":{
@@ -365,7 +371,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Imagine being Ophelia, fully clothed and just absolutely drenched in water. You better have hoped it was a hot day because my word I would be misrable if it was anything less than 40 degrees. It's a painting depicting <i>Hamlet</i>, Act IV, Scene vii where she oh..... she falls into a stream a drowns.",
+      "comment": "Imagine being Ophelia, fully clothed and just absolutely drenched in water. You better have hoped it was a hot day because my word I would be miserable if it was anything less than 40 degrees. It is a painting depicting <i>Hamlet</i>, Act IV, Scene vii where she oh... she falls into a stream and drowns.",
       "extraLink": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506"
     },
     "0502_Self-PortraitAsTheAllegoryOfPainting_ArtemisiaGentileschi":{
@@ -382,7 +388,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "This is a classic self-portrait of an artist. Bonus points for the artist painting another painting in the painting. In fact she is depicting herself as the female personification of Painting, But in a tongue in cheek way I think?",
+      "comment": "This is a classic self-portrait of an artist. Bonus points for the artist painting another painting in the painting. In fact, she is depicting herself as the female personification of Painting, but in a tongue in cheek way I think?",
       "extraLink": "https://www.rct.uk/collection/405551/self-portrait-as-the-allegory-of-painting-la-pittura"
     },
     "0503_Self-PortraitWithThornNecklaceAndHummingbird_FridaKahlo":{
@@ -399,7 +405,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "It's Kahlo! There's some animals here as well all with their own symbolism associated with them. The hummingbird could symbolise freedom but now it is dead, or it could represent a good luck charm for falling in love or it is meant to invoke the Aztec god of war. The monkey is a symbol of evil, but also she was gifted a spider monkey from Rivera whom she had just divorced. The thorns, is it meant to be christ like or just ouchy ouchy? Don't think about these things too hard. Just look at the pretty animals.",
+      "comment": "It's Kahlo! There are some animals here as well all with their own symbolism associated with them. The hummingbird could symbolise freedom but now it is dead, or it could represent a good luck charm for falling in love or it is meant to invoke the Aztec god of war. The monkey is a symbol of evil, but also, she was gifted a spider monkey from Rivera whom she had just divorced. The thorns, is it meant to be Christ like or just ouchy ouchy? Don't think about these things too hard. Just look at the pretty animals.",
       "extraLink": "https://www.fridakahlo.org/self-portrait-with-thorn-necklace-and-hummingbird.jsp"
     },
     "0504_LeGrandCanal_ClaudeMonet":{
@@ -416,7 +422,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "<i>Le Grand Canal</i> (or <i>The Grand Canal</i> in english) is one of six paintings looking down the canal towards the Salute Church. It's sort of like Magic: The Gathering where you have alternative art of the same card. It sold for $35 million in 2015. Here you can see it in the Toilet Gallery completely free of charge.",
+      "comment": "<i>Le Grand Canal</i> (or <i>The Grand Canal</i> in english) is one of six paintings looking down the canal towards the Salute Church. It is sort of like Magic: The Gathering where you have alternative art of the same card. It sold for $35 million in 2015. Here you can see it in the Toilet Gallery completely free of charge.",
       "extraLink": "https://en.wikipedia.org/wiki/Le_Grand_Canal"
     },
     "0505_TheKiss_GustavKlimt":{
@@ -450,7 +456,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Hey check it out, it is Italian merchant Giovanni di Nicolao Arnolfini and his wife (no name). What a wonderful time for both capatalism and the patriarchy! The artist is flexing with the concave mirror in the background and they also threw in a cute little dog for good measure.",
+      "comment": "Hey check it out, it is Italian merchant Giovanni di Nicolao Arnolfini and his wife (no name). What a wonderful time for both capitalism and the patriarchy! The artist is flexing with the concave mirror in the background and they also threw in a cute little dog for good measure.",
       "extraLink": "https://en.wikipedia.org/wiki/Arnolfini_Portrait"
     },
     "0507_SexyRobot_HajimeSorayama":{
@@ -484,7 +490,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "This drawing is from the French fashion magazine <i>Art, Goût, Beauté</i>. It ran from 1921 to 1933 and its audience were the more upper class, as it gave hints and tips on how to dress, where to go, and how to behave. I'm not sure who drew this piece, or indeed, which issue it appears in, the internet was sorely lacking on this topics.",
+      "comment": "This drawing is from the French fashion magazine <i>Art, Goût, Beauté</i>. It ran from 1921 to 1933 and its audience were the more upper class, as it gave hints and tips on how to dress, where to go, and how to behave. I am not sure who drew this piece, or indeed, which issue it appears in, the internet was sorely lacking on this topic.",
       "extraLink": "https://fashionsummedup.com/2021/05/02/art-gout-beaute/"
     },
     "0602_Bathers_RupertBunny":{
@@ -518,7 +524,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "'Ooooh, I'm the king and I'm sad', is what I imagine the art is saying. This is actually Henri Matisse's last self-portrait. He was in poor health and by the 1950s we had given up painting in favour of creating these collages.",
+      "comment": "'Ooooh, I'm the king and I'm sad', is what I imagine the art is saying. This is Henri Matisse's last self-portrait. He was in poor health and by the 1950s we had given up painting in favour of creating these collages.",
       "extraLink": "https://www.henrimatisse.org/sorrow-of-the-king.jsp"
     },
     "0604_WilliamAndShirleyFloraAndFauna":{
@@ -535,7 +541,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Look at this cute little painting. I got nothing. It's cute!",
+      "comment": "Look at this cute little painting. I got nothing. It is cute!",
       "extraLink": "https://www.artlink.com.au/articles/2555/light-years-william-robinson-and-the-creation-stor/"
     },
     "0701_ForestCunninghamsGap_ConradMartens":{
@@ -603,7 +609,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "She was a girl. Wearing an earring. Can I make it anymore obvious? This is one of the all time classics. I know one of the ai art generators was advertising itself by expanding out the borders of the painting. My personal favourite take on this piece is a Dutch astrophysicist who said, um actually the earring looks to be more polished tin on the grounds of the specular reflection, pear shape, and large size.",
+      "comment": "She was a girl. Wearing an earring. Can I make it any more obvious? This is one of the all-time classics. I know one of the ai art generators was advertising itself by expanding out the borders of the painting. My personal favourite take on this piece is a Dutch astrophysicist who said, um actually the earring looks to be more polished tin on the grounds of the specular reflection, pear shape, and large size.",
       "extraLink": "https://en.m.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
     },
     "0705_BirdStealingBaby_SimonGende":{
@@ -620,7 +626,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "This piece is based off a PNG story where there are no men in a village so the bird goes and gets a baby from another place. And the new clan call him Pigeon. All the artists works continue the story (the link below is a wonderful youtube video where he describes it all).",
+      "comment": "This piece is based off a PNG story where there are no men in a village so the bird goes and gets a baby from another place. And the new clan call him Pigeon. All the artists’ works continue the story (the link below is a wonderful YouTube video where he describes it all).",
       "extraLink": "https://youtu.be/o2pjPxaB5cg"
     },
     "0706_WaterLillies_ClaudeMonet":{
@@ -637,7 +643,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Monet loved nothing more than slinging out the paint and flipping together some water lillies. I mean, if you're good at what you do, but some variety would be nice. He painted a lot of these in the last 30 years of his life when he had catarats which might explain why they're so splodgy.",
+      "comment": "Monet loved nothing more than slinging out the paint and flipping together some water lilies. I mean, if you are good at what you do, but some variety would be nice. He painted a lot of these in the last 30 years of his life when he had cataracts which might explain why they're so splodgy.",
       "extraLink": "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)"
     },
     "0801_ASundayOnLaGrandeJatte_GeorgesSeurat":{
@@ -654,7 +660,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Although you may not think it, this painting is actually massive at 2x3m. I heavily recommend reading the link for the details on this piece because it is fascinating if just from a technical perspective. This artwork was painted with a technique known as Pointillism, basically the entire thing is made up of small uniform dots and our brains mix together the colours that are close to each other.",
+      "comment": "Although you may not think it, this painting is actually massive at 2x3m. I heavily recommend reading the link for the details on this piece because it is fascinating if just from a technical perspective. This artwork was painted with a technique known as Pointillism, basically the entire thing is made up of small uniform dots and our brains mix the colours that are close to each other.",
       "extraLink": "https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884"
     },
     "0802_TheFightingTemeraire_JosephMallordWilliamTurner":{
@@ -688,7 +694,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "As a part of year 10 English we had to listen to this song called Starry Starry Night and write about our feelings and how it was inspired by this painting. Coincidentally, this was also around the time that I grew dissallusioned in English as a subject.",
+      "comment": "As a part of year 10 English we had to listen to this song called Starry Starry Night and write about our feelings and how it was inspired by this painting. Coincidentally, this was also around the time that I grew disillusioned in English as a subject.",
       "extraLink": "https://www.youtube.com/watch?v=dipFMJckZOM"
     },
     "0804_Nighthawks_EdwardHopper":{
@@ -705,7 +711,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Eeh see? We're just a couple of nighthawks hanging out at our favourite diner in Chicago see? I'll have a large apple pie and milkshake see? My favpurite bit of trivia about this painting is Hopper's wife kept notes on all of Hopper's works. In it she says the intended name for the piece was originally <iz.Night Hawks</i>. Is te actual name better? You decide. Perform a half flush for <i>Nighthawks</i> and a full flush for <i>Night Hawks</i>",
+      "comment": "Eeh see? We're just a couple of nighthawks hanging out at our favourite diner in Chicago, see? I'll have a large apple pie and milkshake, see? My favourite bit of trivia about this painting is Hopper's wife kept notes on all of Hopper's works. In it she says the intended name for the piece was originally <i>Night Hawks</i>. Is the actual name better? You decide. Perform a half flush for <i>Nighthawks</i> and a full flush for <i>Night Hawks</i>",
       "extraLink": "https://www.artic.edu/artworks/111628/nighthawks"
     },
     "0805a_PaulGuilaume_AmedeoModigliani":{
@@ -722,7 +728,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "What an absolute trek it was to hunt this one down and in the end I didn't really acheive it fully. This piece is a portrait of Paul Guillaume by Modigliani but honrstly, Modigliani churned these out for some reason. If you can find any more info that would be very helpful.",
+      "comment": "What an absolute trek it was to hunt this one down and, in the end, I didn't really achieve it fully. This piece is a portrait of Paul Guillaume by Modigliani but honestly, Modigliani churned these out for some reason. If you can find any more info that would be very helpful.",
       "extraLink": "https://www.ngv.vic.gov.au/orangerie/modiglianiimage.html"
     },
     "0901_Heritage_CaiGuo-Qiang":{
@@ -739,7 +745,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "I know the image here doesn't match to the postcard in the physical Toilet Gallery. This image was taken from a different angle because it's a massive installation piece and not a painting. A single drop of water drums into the centre of the lake.",
+      "comment": "I know the image here doesn't match to the postcard in the physical Toilet Gallery. This image was taken from a different angle because it is a massive installation piece and not a painting. A single drop of water drums into the centre of the lake.",
       "extraLink": "https://blog.qagoma.qld.gov.au/cai-guo-qiang-heritage-99-replicas-of-animals/"
     },
     "0902_SpiritOfThePlains_SydneyLong":{
@@ -858,7 +864,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "This one screams music to me. It's what I imagine notes look like as they dance off the page and into an unsuspecting ear.",
+      "comment": "This one screams music to me. It is what I imagine notes look like as they dance off the page and into an unsuspecting ear.",
       "extraLink": "https://www.wassily-kandinsky.org/Yellow-Red-Blue.jsp"
     },
     "1004_PortraitOfDoraMara_PabloPicasso":{
@@ -903,7 +909,7 @@ function display_popup_from_svg(id_of_painting){
       "pob": "Melbourne",
       "yob": 1951,
       "yod": 1999,
-      "pod": "Mebourne",
+      "pod": "Melbourne",
       "paintingDate": "1994",
       "medium": "Synthetic polymer paint on canvas",
       "style": "",
@@ -943,7 +949,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Whenever I am sad I look at this tiger's face and the world seems that little bit better. Just look at that tiger's face. How could it not make you happy? An alternate title for this piece is <i>Surpised!</i>",
+      "comment": "Whenever I am sad, I look at this tiger's face and the world seems that little bit better. Just look at that tiger's face. How could it not make you happy? An alternate title for this piece is <i>Surprised!</i>",
       "extraLink": "https://www.youtube.com/watch?v=JQYrBWnJW4s"
     },
     "1104_HaystackInTheMorning_ClaudeMonet":{
@@ -960,7 +966,7 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "Hey look, it's Monet. Let's flip a coin and see if it is going to be a haystack or a water lily. It is fascinating to see all the haystacks lined up next to each other and the differences between them (see the link). But get a different subject my guy.",
+      "comment": "Hey look, it's Monet. Let us flip a coin and see if it is going to be a haystack or a water lily. It is fascinating to see all the haystacks lined up next to each other and the differences between them (see the link). But get a different subject my guy.",
       "extraLink": "https://en.wikipedia.org/wiki/Haystacks_(Monet_series)"
     },
     "1105_BruteFolly_FranciscoGoyaYLucientes":{
@@ -990,7 +996,7 @@ function display_popup_from_svg(id_of_painting){
       "yod": 1996,
       "pod": "Naarm",
       "paintingDate": "unknown painting date",
-      "medium": "",
+      "medium": "Probably oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
@@ -1045,61 +1051,61 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "For some reason this artwork is all over the online auction houses. People can't get enough of it I suppose. I also took the squiggles to spell 'Ini' but on further reflection they appear to be movement lines.",
+      "comment": "For some reason this artwork is all over the online auction houses. People cannot get enough of it I suppose. I also took the squiggles to spell 'Ini' but on further reflection they appear to be movement lines.",
       "extraLink": "https://www.ngv.vic.gov.au/school_resource/digital-creatives-keith-harings-digital-dance-club/"
     },
     "1302_IdeasOfBarak_VernonAhKee":{
       "art": "1302_IdeasOfBarak_VernonAhKee",
-      "title": "",
+      "title": "Ideas of Barak",
       "artist": "Vernon Ah Kee",
       "nationality": "Australian",
       "pob": "Innisfail",
       "yob": 1967,
       "yod": "Present",
       "pod": "",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "2011",
+      "medium": "Black charcoal on primed acrylic",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
+      "comment": "William Barak, the subject of this painting, was the last leader of the Yarra-Yarra tribe and an accomplished artist. He died in 1903 but his name is all over the place here in Victoria. There is the William Barak Bridge near the MCG, there is a giant image of him on the Barak building along Swanston Street. He was really the one who represented indigenous interests to the governing forces at the time.",
       "extraLink": "https://www.ngv.vic.gov.au/multimedia/vernon-ah-kee-investigating-ideas-of-barak/"
     },
     "1303_Number6_JacksonPollock":{
       "art": "1303_Number6_JacksonPollock",
-      "title": "",
+      "title": "Number 6",
       "artist": "Jackson Pollock",
       "nationality": "American",
       "pob": "Cody",
       "yob": 1912,
       "yod": 1956,
       "pod": "Springs",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1949",
+      "medium": "Duco and aluminum paint on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Gesundheit.",
+      "extraLink": "https://emuseum.mfah.org/objects/47833/number-6"
     },
     "1304_WhenWillYouMarry_PaulGauguin":{
       "art": "1304_WhenWillYouMarry_PaulGauguin",
-      "title": "",
+      "title": "When Will You Marry?",
       "artist": "Paul Gaugin",
       "nationality": "French",
       "pob": "Paris",
       "yob": 1848,
       "yod": 1903,
       "pod": "Atuona",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1892",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "So, this artist travels to Tahiti with the sole purpose to find a paradise where he could create pure primitive art, unlike all the faux primitive art being created in France at the time. First off, rude. Secondly, he arrived and found Tahiti to be colonised and two thirds of the indigenous population had been killed by colonial disease. He did some paintings anyway. They were not well received back in France. Just recently this one sold for US$210 million.",
+      "extraLink": "https://en.wikipedia.org/wiki/When_Will_You_Marry%3F"
     },
-    "1305_TeaAndCoffeeSalon_SabōSaekiShunko":{
+    "1305_TeaAndCoffeeSalon_SaboSaekiShunko":{
       "art": "1305_TeaAndCoffeeSalon_SabōSaekiShunko",
       "title": "Tea and coffee salon, Sabō",
       "artist": "Saeki Shunko",
@@ -1108,32 +1114,32 @@ function display_popup_from_svg(id_of_painting){
       "yob": 1909,
       "yod": 1942,
       "pod": "",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1939",
+      "medium": "ink, colour, paper, lacquer",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "I take my tea black but with two ice cubes. Tara has hers with a dash of milk and one sugar.",
+      "extraLink": "https://www.ngv.vic.gov.au/explore/collection/work/117866/"
     },
     "1306_TheSonOfMan_ReneMagritte":{
       "art": "1306_TheSonOfMan_ReneMagritte",
-      "title": "",
+      "title": "The Son of Man",
       "artist": "Rene Magritte",
       "nationality": "Belgian",
       "pob": "Lessines",
       "yob": 1898,
       "yod": 1967,
       "pod": "Rue des Mimosas",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1964",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "You ever have one of those days where you just feel off. Perhaps your limbs are weak and you feel faint and dizzy? It might be because you have not eaten enough and your blood sugars are low. Eating an apple is a great way to rectify this situation. Apples. Yes Please.",
+      "extraLink": "https://en.wikipedia.org/wiki/The_Son_of_Man"
     },
-    "1307_IAmAMermaid_EuniceDjerrkŋuYunupiŋu":{
+    "1307_IAmAMermaid_EuniceDjerrknuYunupinu":{
       "art": "1307_IAmAMermaid_EuniceDjerrkŋuYunupiŋu",
       "title": "I am a Mermaid",
       "artist": "Djerrkŋu Yunupiŋu (Eunice)",
@@ -1147,483 +1153,483 @@ function display_popup_from_svg(id_of_painting){
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "This is my favourite one",
+      "comment": "This is my favourite one.",
       "extraLink": "https://www.ngv.vic.gov.au/multimedia/djerrkngu-yunupingu-i-am-a-mermaid/"
     },
     "1401_ElephantWalking_EadweardMuybridge":{
       "art": "1401_ElephantWalking_EadweardMuybridge",
-      "title": "",
+      "title": "Elephant Walking",
       "artist": "Eadweard Muybridge",
       "nationality": "English",
       "pob": "Kingston upon Thames",
       "yob": 1830,
       "yod": 1904,
       "pod": "Kingston upon Thames",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1887",
+      "medium": "Collotype",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Muybridge took it upon himself to document animal locomotion. He did 781 of these collotypes, a lot of them were horses, this one is an elephant.",
+      "extraLink": "https://www.nga.gov/collection/art-object-page.136541.html"
     },
     "1402_MonaLisa_LeonardoDaVinci":{
       "art": "1402_MonaLisa_LeonardoDaVinci",
-      "title": "",
+      "title": "Mona Lisa",
       "artist": "Leonardo da Vinci",
       "nationality": "Italian",
       "pob": "Anchiano",
       "yob": 1452,
       "yod": 1519,
       "pod": "Château du Clos Lucé",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1503-1506",
+      "medium": "Oil on poplar panel",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "It took Leo three years to paint this tiny painting. I'm not saying this painting is overblown but three years? I'm quite sure it didn't take three years to make this emoji: 😏, which is pretty much the same thing. The linked Wikipedia article goes into how it only got popular after someone stole it in 1911 which is worth a read.",
+      "extraLink": "https://en.wikipedia.org/wiki/Mona_Lisa"
     },
     "1403_HousesAtAuvers_VincentVanGogh":{
       "art": "1403_HousesAtAuvers_VincentVanGogh",
-      "title": "",
+      "title": "Houses in Auvers",
       "artist": "Vincent van Gogh",
       "nationality": "Dutch",
       "pob": "Zundert",
       "yob": 1853,
       "yod": 1890,
       "pod": "Auvers-sur-Oise",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1890",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Monet had their water lilies and haystacks, Van Gogh had these houses in Auvers. Dude was obsessed with them. Bit too smudged for my liking though, three stars.",
+      "extraLink": "https://www.vincentvangogh.org/houses-in-auvers.jsp"
     },
     "1404_TheBanquetOfCleopatra_GiovanniBattistaTiepolo":{
       "art": "1404_TheBanquetOfCleopatra_GiovanniBattistaTiepolo",
-      "title": "",
+      "title": "The Banquet of Cleopatra",
       "artist": "Giovanni Battista Tiepolo",
       "nationality": "Italian",
       "pob": "Venice",
       "yob": 1696,
       "yod": 1770,
       "pod": "Madrid",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1743-1744",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "This is basically fan art of Cleopatra and Mark Antony. This one is great because of the dogs, cannot go wrong with adding some dogs in. In this painting, the mad lad Cleo is dissolving her pearl earring in a glass of vinegar to drink it, to 'own' Antony and win a bet to see who could make a more lavish banquet.",
+      "extraLink": "https://www.ngv.vic.gov.au/explore/collection/work/4409/"
     },
     "1405_HorsesBathingInTheSea_LucyKemp":{
       "art": "1405_HorsesBathingInTheSea_LucyKemp",
-      "title": "",
+      "title": "Horses Bathing in the Sea",
       "artist": "Lucy Kemp-Welch",
       "nationality": "British",
       "pob": "Bournemouth",
       "yob": 1869,
       "yod": 1958,
       "pod": "Watford",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1899",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Horses in the sea, <br>getting clean at last.<br>Watch them leap with glee, <br>watch them take a bath.<br>And the men as well, getting cleaner too.<br>Just imagine the horse poo, ah-ah. <br>Just floating in the water, ah-ah.<br>",
+      "extraLink": "https://www.ngv.vic.gov.au/essay/horses-bathing-in-the-sea-by-lucy-kemp-welch-1869-1958-the-paintings-genesis-2/"
     },
     "1501_ThePersistanceOfMemory_SalvadorDali":{
       "art": "1501_ThePersistanceOfMemory_SalvadorDali",
-      "title": "",
+      "title": "The Persistence of Memory",
       "artist": "Salvador Dali",
       "nationality": "Spanish",
       "pob": "Figueres",
       "yob": 1904,
       "yod": 1989,
       "pod": "Figueres",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1931",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Comedian: Man, it is hot today.<br>Audience: How hot is it?<br>Comedian: <b><i>The Persistence of Memory</b></i>, 1931, by <b>Salvador Dali</b> (Spanish, 1904-1989)<br>Audience (later): How did they do that with their voice?<br>",
+      "extraLink": "https://www.moma.org/collection/works/79018"
     },
     "1502_DancersInBlue_EdgarDagas":{
       "art": "1502_DancersInBlue_EdgarDagas",
-      "title": "",
+      "title": "Dancers in Blue",
       "artist": "Edgar Degas",
       "nationality": "French",
       "pob": "Paris",
       "yob": 1834,
       "yod": 1917,
       "pod": "Paris",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1890",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Dude loved the ballet, at least he loved painting ballerinas. We went to the Alice in Wonderland ballet; it had two intermissions. They had small children dressed up as hedgehogs do forward rolls and everyone liked that.",
+      "extraLink": "https://www.thehistoryofart.org/edgar-degas/blue-dancers/"
     },
     "1503_MorningSunlightOnTheSnow_CamillePissarro":{
       "art": "1503_MorningSunlightOnTheSnow_CamillePissarro",
-      "title": "",
+      "title": "Morning Sunlight on the Snow",
       "artist": "Camille Pissarro",
       "nationality": "Danish-French",
       "pob": "Charlotte Amalie",
       "yob": 1830,
       "yod": 1903,
       "pod": "Paris",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1895",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Looks brisk. You must wonder if the artist was on site to paint this one. I sure hope they were rugged up otherwise it would have been a <i>pain</i>ting to make!<br>If you liked that joke I regularly perform with <i>The Big Hoo-Haa! Melbourne</i> most Saturdays.",
+      "extraLink": "https://collections.mfa.org/objects/31810"
     },
     "1504_FlyingCloud_KennethMacqueen":{
       "art": "1504_FlyingCloud_KennethMacqueen",
-      "title": "",
+      "title": "(Flying Cloud)",
       "artist": "Kenneth McQueen",
       "nationality": "Australian",
       "pob": "",
       "yob": 1897,
       "yod": 1960,
       "pod": "",
-      "paintingDate": "",
+      "paintingDate": "c.1950",
       "medium": "",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "They say good art asks questions. It is my thesis that this artist realised their painting was not asking any hard-hitting questions besides from, 'Why the cloud be like that?' so they threw the title in parenthesis just to have something to make the audience ponder. What could the parenthesis mean?<br>It is a nice cloud though. ",
+      "extraLink": "https://learning.qagoma.qld.gov.au/artworks/flying-cloud/"
     },
     "1505_TheWaterLilyPond_ClaudeMonet":{
       "art": "1505_TheWaterLilyPond_ClaudeMonet",
-      "title": "",
+      "title": "The Water-Lily Pond",
       "artist": "Claude Monet",
       "nationality": "French",
       "pob": "Paris",
       "yob": 1840,
       "yod": 1926,
       "pod": "Giverny",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1899",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Well what a surprise. Monet is back with some more water lilies, who would have thought? Fair play though, if I saw that scenery I would have taken a photo, Monet was just working with the tools at his disposal.",
+      "extraLink": "https://www.nationalgallery.org.uk/paintings/claude-monet-the-water-lily-pond"
     },
-    "1506_It'sOurDestiny2_EkoNugroho":{
+    "1506_ItsOurDestiny2_EkoNugroho":{
       "art": "1506_It'sOurDestiny2_EkoNugroho",
-      "title": "",
+      "title": "It's our destiny 2",
       "artist": "Eko Nugroho",
       "nationality": "Indonesian",
       "pob": "Yogyakarta",
       "yob": 1977,
       "yod": "Present",
       "pod": "",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "2012",
+      "medium": "Synthetic polymer paint and fibre-tipped pen on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Selamat pagi, some Indonesian representation! I would say this piece is baik. Even going as far to say it is baik sekali. God, I hope my high school Indonesian is correct.",
+      "extraLink": "https://www.ngv.vic.gov.au/explore/collection/work/114978/"
     },
     "1507_AbstractPainting_GerhardRichter":{
       "art": "1507_AbstractPainting_GerhardRichter",
-      "title": "",
+      "title": "Abstract Painting (725-3)",
       "artist": "Gerhard Richter",
       "nationality": "German",
       "pob": "Dresden",
       "yob": 1932,
       "yod": "Present",
       "pod": "",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1990",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "This is another artist that needs a better naming convention. At least in this one he includes numbers in the title to differentiate. This painting is how I feel when I am recovering from a cold. What about you?",
+      "extraLink": "https://www.ngv.vic.gov.au/gerhard-richter-abstract-painting-725-3-1990/"
     },
     "1601_HamLongStreet_BuiXuanPhai":{
       "art": "1601_HamLongStreet_BuiXuanPhai",
-      "title": "",
+      "title": "Ham Long Street",
       "artist": "Bùi Xuân Phái",
       "nationality": "Vietnamese",
       "pob": "Hanoi",
       "yob": 1920,
       "yod": 1988,
       "pod": "Hanoi",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "c.1984",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "This is another tricky one with hardly anything to find on the internet on this specific piece. The artist is well known for painting the old quarter in Hanoi.  It's a beautiful place, and we would recommend you go if you ever find yourself in Vietnam. Jonah made a friend, Bobby, when we were staying there. And that is when he also took up the hobby of picking up stools and moving them round the shops, much like a miniature poltergeist would.",
+      "extraLink": "https://www.hanoiarttours.com/bui-xuan-phai-painter/"
     },
     "1602_Self-Portrait_VincentVanGogh":{
       "art": "1602_Self-Portrait_VincentVanGogh",
-      "title": "",
+      "title": "Self-Portrait",
       "artist": "Vincent van Gogh",
       "nationality": "Dutch",
       "pob": "Zundert",
       "yob": 1853,
       "yod": 1890,
       "pod": "Auvers-sur-Oise",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1889",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Is he a friend or a foe? It's your boy Van Gogh.<br>You better not cough, it's your boy Van Gogh.<br>He'll eat you out like a hog, it's your boy Van Gogh.<br>",
+      "extraLink": "https://artsandculture.google.com/asset/self-portrait/9gFw_1Vou2CkwQ?hl=en"
     },
     "1603_DrySalvages_JohnOlsen":{
       "art": "1603_DrySalvages_JohnOlsen",
-      "title": "",
+      "title": "Dry Salvages",
       "artist": "John Olsen",
       "nationality": "Australian",
       "pob": "Newcastle",
       "yob": 1928,
       "yod": 2023,
       "pod": "Bowrai",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1956",
+      "medium": "Oil on hardboard",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Dry Salvages takes its namesake from the T.S. Eliot poem which makes this either homage, inspiration, plagiarism. Please vote by doing a pee for homage, a poo for inspiration, and a Number 3 for plagiarism.",
+      "extraLink": "https://www.artgallery.nsw.gov.au/collection/works/68.1972/#about"
     },
     "1604_TheLacquerRoom_GraceCossingtonSmith":{
       "art": "1604_TheLacquerRoom_GraceCossingtonSmith",
-      "title": "",
+      "title": "The Lacquer Room",
       "artist": "Grace Cossington Smith",
       "nationality": "Australian",
       "pob": "Neutral Bay",
       "yob": 1892,
       "yod": 1984,
       "pod": "Roseville",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1936",
+      "medium": "Oil on paperboard on plywood",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "I love the little man staring directly at the audience in this painting. His blue eyes pierce right out of the painting. What is your story strange man sitting in a David Jones cafeteria? We will never know.",
+      "extraLink": "https://www.artgallery.nsw.gov.au/collection/works/OA10.1967/#about"
     },
     "1605_JetStream_JulianOpie":{
       "art": "1605_JetStream_JulianOpie",
-      "title": "",
+      "title": "Jet Stream",
       "artist": "Julian Opie",
       "nationality": "British",
       "pob": "London",
       "yob": 1958,
       "yod": "Present",
       "pod": "",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "2011",
+      "medium": "Continuous computer animation on LED screen, sound",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Julian Opie had this amazing exhibit at the NGV International a few years ago. He is a very fun artist. A lot of rotoscoped work. The birds out the front of the NGV International are Opie's as well. The original work had an audio landscape which unfortunately does not translate to a lenticular postcard. Click the link to see it in motion.",
+      "extraLink": "https://www.julianopie.com/film/2011/jet-stream"
     },
     "1606_MeadowWithPoplars_ClaudeMonet":{
       "art": "1606_MeadowWithPoplars_ClaudeMonet",
-      "title": "",
+      "title": "Meadow with Poplars",
       "artist": "Claude Monet",
       "nationality": "French",
       "pob": "Paris",
       "yob": 1840,
       "yod": 1926,
       "pod": "Giverny",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1875",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "People have accused me of being negative about Monet, that he only paints water-lilies or haystacks, so far play to the man, this painting is neither of those things (even if I can see some haystacks in the distance). It is a beautiful painting and makes me nostalgic for a time I did not inhabit. I can feel the warmth of the sun on my face and carefree innocence in the air.",
+      "extraLink": "https://commons.wikimedia.org/wiki/File:Monet_Meadow-with-Poplars-Homepage.jpg"
     },
     "1701_MondayMorning_VidaLahey":{
       "art": "1701_MondayMorning_VidaLahey",
-      "title": "",
+      "title": "Monday morning",
       "artist": "Vida Lahey",
       "nationality": "Australian",
       "pob": "Pimpama",
       "yob": 1882,
       "yod": 1968,
       "pod": "Wonga",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1912",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Mondays am I right?",
+      "extraLink": "https://learning.qagoma.qld.gov.au/artworks/monday-morning/"
     },
     "1702_WomanInAnArmchair_PabloPicasso":{
       "art": "1702_WomanInAnArmchair_PabloPicasso",
-      "title": "",
+      "title": "Woman in an armchair (Femme dans un fauteuil)",
       "artist": "Pablo Picasso",
       "nationality": "Spanish",
       "pob": "Málaga",
       "yob": 1881,
       "yod": 1973,
       "pod": "Mougins",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1927",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "I can see the woman. And I can kind of see the armchair but only because the title of the piece told me to look for an armchair. Without knowledge of the title I would have interpreted it as a woman stealing a framed piece of art at sunset. What about you? Please write your response on one (1) square of toilet paper using a writing implement of your choice.",
+      "extraLink": "https://artguide.com.au/an-embracing-tussle-five-contemporary-artists-on-picasso/"
     },
     "1703_ASceneOnTheIceNearATown_HendrickAvercamp":{
       "art": "1703_ASceneOnTheIceNearATown_HendrickAvercamp",
-      "title": "",
+      "title": "A Scene on the Ice near a Town",
       "artist": "Hendrick Avercamp",
       "nationality": "Dutch",
       "pob": "Amsterdam",
       "yob": 1585,
       "yod": 1634,
       "pod": "Kampen",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "c.1615",
+      "medium": "Oil on oak",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Did you know there was a little ice age that hit northern Europe in the 17th Century? Well now you do. This piece gives me <i>Where's Wally?</i> in the nicest way possible. This one is dense!",
+      "extraLink": "https://www.nationalgallery.org.uk/paintings/hendrick-avercamp-a-scene-on-the-ice-near-a-town"
     },
-    "1704_ApplesAndOranges_PaulCézanne":{
+    "1704_ApplesAndOranges_PaulCezanne":{
       "art": "1704_ApplesAndOranges_PaulCézanne",
-      "title": "",
+      "title": "Still Life with Apples and Oranges",
       "artist": "Paul Cézanne",
       "nationality": "French",
       "pob": "Aix-en-Provence",
       "yob": 1839,
       "yod": 1906,
       "pod": "Aix-en-Provence",
-      "paintingDate": 1900,
-      "medium": "",
+      "paintingDate": 1895,
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "There's a pitcher in the picture!",
+      "extraLink": "https://www.paulcezanne.org/still-life-with-apples-and-oranges.jsp"
     },
     "1801_AgainstAllOdds_BrookAndrew":{
       "art": "1801_AgainstAllOdds_BrookAndrew",
-      "title": "",
+      "title": "Against all odds",
       "artist": "Brook Andrew",
       "nationality": "Australian",
       "pob": "Sydney",
       "yob": 1970,
       "yod": "Present",
       "pod": "",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "2005",
+      "medium": "Collage of cut colour screenprint on screenprint",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Against all odds, attached to nothing surprising, the uprising. Brook Andrew is a first nation's man. I have seen this piece in pink as well, which suggests there are more copies out there coloured differently.",
+      "extraLink": "https://www.geelonggallery.org.au/whats-on/exhibitions/brook-andrew-hope-peace-and-paradise/hope-and-peace-series"
     },
     "1802_HorsemanInLandscape_FredWilliams":{
       "art": "1802_HorsemanInLandscape_FredWilliams",
-      "title": "",
+      "title": "Horseman in landscape",
       "artist": "Fred Williams",
       "nationality": "Australian",
       "pob": "Richmond",
       "yob": 1927,
       "yod": 1982,
       "pod": "Hawthorn",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1968",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "I am a big fan of the Australiana landscape. Or rather, I am a big fan of the idea of the Australiana landscape. This just speaks to me even though I cannot see any horseman. Maybe they are shy.",
+      "extraLink": "https://www.ngv.vic.gov.au/explore/collection/work/3214/"
     },
     "1803_MortaruruWithRedOverhead_AleksandrVolkov":{
       "art": "1803_MortaruruWithRedOverhead_AleksandrVolkov",
-      "title": "",
-      "artist": "Alexander Nikolaevich Volkov",
-      "nationality": "Russian",
-      "pob": "Fergana",
-      "yob": 1886,
-      "yod": 1957,
-      "pod": "Tashkent",
-      "paintingDate": "",
-      "medium": "",
+      "title": "Mortaruru with Red Overhead",
+      "artist": "Willi Baumeister",
+      "nationality": "German",
+      "pob": "",
+      "yob": 1889,
+      "yod": 1955,
+      "pod": "",
+      "paintingDate": "1953",
+      "medium": "Not sure, probably oil on board",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "It's giving angry snowman.",
+      "extraLink": "https://www.etsy.com/listing/1661218869/willi-baumeister-mortaruru-with-red?gpla=1&gao=1&"
     },
     "1804_ALionAttackingAHorse_GeorgeStubbs":{
       "art": "1804_ALionAttackingAHorse_GeorgeStubbs",
-      "title": "",
+      "title": "A Lion Attacking a Horse",
       "artist": "George Stubbs",
       "nationality": "English",
       "pob": "Liverpool",
       "yob": 1724,
       "yod": 1806,
       "pod": "Marylebone",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "1762",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "Interestingly, in trying to find this piece I came across very similar pieces. The lion and horse would be in the same pose but their colour would be different or transposed to a different environment. So, he got very good at drawing lions attacking horses by the end. He could probably do it in his sleep <i>lying</i> down.",
+      "extraLink": "https://www.ngv.vic.gov.au/explore/collection/work/4393/"
     },
     "1805_ManInBlue_PabloPicasso":{
       "art": "1805_ManInBlue_PabloPicasso",
-      "title": "",
+      "title": "Man in Blue",
       "artist": "Pablo Picasso",
       "nationality": "Spanish",
       "pob": "Málaga",
       "yob": 1881,
       "yod": 1973,
       "pod": "Mougins",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "c.1902",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "This is from Picasso's 'Blue Period', which has its own Wikipedia entry. It comprised of a lot of blue paintings and a lot of sad subjects. This is one of them.",
+      "extraLink": "https://www.wikiart.org/en/pablo-picasso/man-in-blue"
     },
     "1806_SpringScene_RupertBunny":{
       "art": "1806_SpringScene_RupertBunny",
-      "title": "",
+      "title": "Spring scene",
       "artist": "Rupert Bunny",
       "nationality": "Australian",
       "pob": "Melbourne",
       "yob": 1864,
       "yod": 1947,
       "pod": "Melbourne",
-      "paintingDate": "",
-      "medium": "",
+      "paintingDate": "c.1921",
+      "medium": "Oil on canvas",
       "style": "",
       "genre": "",
       "period": "",
-      "comment": "",
-      "extraLink": ""
+      "comment": "This is one of my favourites. Jonah is adamant this one is a painting of Tara. Which one do you think Jonah thinks is of me? Here is a hint, it is not flattering.",
+      "extraLink": "https://www.tumblr.com/thewondermentofillustration/667293137755062272/rupert-bunny-spring-scene-circa-1921-oil-on"
     }
   }
